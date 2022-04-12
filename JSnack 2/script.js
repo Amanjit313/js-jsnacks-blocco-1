@@ -12,7 +12,7 @@ let primaparola = prompt("Inserisci la prima parola");
 let secondaparola = prompt("Inserisci la seconda parola");
 
 if (primaparola.length > secondaparola.length){
-  document.getElementById("parola").innerHTML = primaparola + secondaparola;
-} else {
   document.getElementById("parola").innerHTML = secondaparola + primaparola;
+} else {
+  document.getElementById("parola").innerHTML = primaparola + secondaparola;
 }
