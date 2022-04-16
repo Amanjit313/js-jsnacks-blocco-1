@@ -1,10 +1,17 @@
-let pNumber = parseInt (prompt("Inserisci il primo numero"));
-let sNumber = parseInt (prompt("Inserisci il secondo numero"));
-let tNumber = parseInt (prompt("Inserisci il terzo numero"));
-let qNumber = parseInt (prompt("Inserisci il quarto numero"));
-let quNumber =parseInt ( prompt("Inserisci il quinto numero"));
+/* 
+  Il software deve chiedere per 5 volte all’utente di inserire un numero.
+  Il programma stampa la somma di tutti i numeri inseriti.
+  Esegui questo programma in due versioni, con il for e con il while (facoltativo)
+*/
+let somma = 0;
 
-let sommanumeri = pNumber + sNumber + tNumber + qNumber + quNumber;
-console.log(sommanumeri);
-document.getElementById("somma-numeri").innerHTML = sommanumeri;
+let contatore = 0;
+while (contatore < 5){
+  let number = parseInt (prompt("Inserisci il primo numero"))
+  somma = somma + number;
+  contatore++;
+}
+
+console.log(somma);
+document.getElementById("somma-numeri").innerHTML = somma;
 
